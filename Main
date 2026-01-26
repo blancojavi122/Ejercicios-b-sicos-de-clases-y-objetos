@@ -1,0 +1,154 @@
+public class Main{
+    public static void main (String[] args) {
+        //Crear objeto
+        Cancion Cancion1 = new Cancion();
+        //Asignar atributos
+        Cancion1.setTitulo("Odisea");
+        Cancion1.setArtista ("Melendi");
+        Cancion1.setDuracionSegundos (206);
+
+        Cancion Cancion2 = new Cancion();
+        Cancion2.setTitulo("Famous");
+        Cancion2.setArtista("Kanye West");
+        Cancion2.setDuracionSegundos (198);
+
+        //MOSTRAR DATOS EN PANTALLA
+        System.out.println("Canción 1: " + Cancion1.getTitulo() + " - " + Cancion1.getArtista() + " (" + Cancion1.getDuracionSegundos() + "s)");
+        System.out.println("Canción 2: " + Cancion2.getTitulo() + " - " + Cancion2.getArtista() + " (" + Cancion2.getDuracionSegundos() + "s)");
+
+        //Establecer nueva duracion
+        System.out.println("!!!!");
+        System.out.println("Cambio en la duración de una de las canciones");
+        Cancion2.setDuracionSegundos(200);
+
+        //MOSTRAR CANCIÓN MÁS LARGA
+        if (Cancion1.getDuracionSegundos() > Cancion2.getDuracionSegundos()) {
+            System.out.println("La canción de más duración es: " + Cancion1.getTitulo());
+        } else {
+            System.out.println("La canción de más duración es: " + Cancion2.getTitulo());
+        }
+        System.out.println("-----------------------------------");
+
+        //PELICULA
+        Pelicula pelicula = new Pelicula();
+        pelicula.settitulo("CREED");
+        pelicula.setDirector("ryan coogler");
+        pelicula.setAnhoDeEstreno(2015);
+        pelicula.setDuracionEnMinutos(133);
+
+        System.out.println("Pelicula: " + pelicula.getTitulo() + " - " + pelicula.getDirector() + " - " + pelicula.getAnhoDeEstreno() + " - " + pelicula.getDuracionEnMinutos() + " MINS" );
+        System.out.println("!!!!");
+        System.out.println("Error al mostrar los datos");
+        System.out.println("Error corregido: " + pelicula.getDirector().toUpperCase());
+        System.out.println("-----------------------------------");
+
+        //YOUTUBERS
+        Youtuber youtuber1 = new Youtuber();
+        Youtuber youtuber2 = new Youtuber();
+        Youtuber youtuber3 = new Youtuber();
+
+        youtuber1.setNumeroSuscriptores(300);
+        youtuber1.setCategoría("Videojuegos");
+        youtuber1.setNombreCanal("Xokas");
+        youtuber2.setNombreCanal("Ibai");
+        youtuber2.setCategoría("Just Chatting");
+        youtuber2.setNumeroSuscriptores(970);
+        youtuber3.setNombreCanal("WIllyrex");
+        youtuber3.setNumeroSuscriptores(1800);
+        youtuber3.setCategoría("Viajes");
+
+        System.out.println("Youtuber 1: " + youtuber1.getNombreCanal() + " - Nº Suscriptores: " + youtuber1.getNumeroSuscriptores() + " - Categoría: " + youtuber1.getCategoría());
+        System.out.println("Youtuber 2: " + youtuber2.getNombreCanal() + " - Nº Suscriptores: " + youtuber2.getNumeroSuscriptores() + " - Categoría: " + youtuber2.getCategoría());
+        System.out.println("Youtuber 3: " + youtuber3.getNombreCanal() + " - Nº Suscriptores: " + youtuber3.getNumeroSuscriptores() + " - Categoría: " + youtuber3.getCategoría());
+
+        System.out.println("!!!!");
+        System.out.println("Actualización de suscriptores");
+
+        youtuber1.setNumeroSuscriptores(320);
+        youtuber2.setNumeroSuscriptores(1000);
+        youtuber3.setNumeroSuscriptores(2500);
+
+        System.out.println("Nº Suscriptores Youtuber 1: " + youtuber1.getNumeroSuscriptores());
+        System.out.println("Nº Suscriptores Youtuber 2: " + youtuber2.getNumeroSuscriptores());
+        System.out.println("Nº Suscriptores Youtuber 3: " + youtuber3.getNumeroSuscriptores());
+        System.out.println("-----------------------------------");
+
+        //FUTBOLISTAS
+        Futbolista futbolista = new Futbolista();
+        futbolista.setNombre("Yeremay");
+        futbolista.setEquipo("Depor");
+        futbolista.setPosicion("Extremo");
+        futbolista.setDorsal(10);
+
+        System.out.println("Jugador: " + futbolista.getNombre() + " - Equipo: " + futbolista.getEquipo() + " - Posicion: " + futbolista.getPosicion() + " - Dorsal: " + futbolista.getDorsal());
+        System.out.println("!!!!");
+        System.out.println("Cambio en el jugador");
+        futbolista.setEquipo("Barsa");
+        futbolista.setDorsal(7);
+        System.out.println("Nuevos datos: Equipo: " + futbolista.getEquipo() + " - Dorsal: " + futbolista.getDorsal());
+
+        System.out.println("-----------------------------------");
+        //SKINS
+        Skin skin1 = new Skin();
+        skin1.setNombre("John Cena");
+        skin1.setJuego("Fortnite");
+        skin1.setRareza("Épica");
+        skin1.setPrecio(2500);
+
+        Skin skin2 = new Skin();
+        skin2.setNombre("Playboy Carty");
+        skin2.setJuego("Fortnite");
+        skin2.setRareza("Legendaria");
+        skin2.setPrecio(3000);
+        System.out.println("Skin 1 - Nombre: " + skin1.getNombre() + " - Juego: " + skin1.getJuego() + " - Rareza: " + skin1.getRareza() + " - Precio: " + skin1.getPrecio() + " pavos.");
+        System.out.println("Skin 2 - Nombre: " + skin2.getNombre() + " - Juego: " + skin2.getJuego() + " - Rareza: " + skin2.getRareza() + " - Precio: " + skin2.getPrecio() + " pavos.");
+        System.out.println("!!!!!");
+        System.out.println("Cambio en la skin de John Cena");
+        skin1.setRareza("Legendaria");
+        skin1.setPrecio(3000);
+        System.out.println("Skin: " + skin1.getNombre() + " - Nuevo Precio: " + skin1.getPrecio() +  " - Rareza: " + skin1.getRareza());
+        System.out.println("-----------------------------------");
+
+
+        //POKEMONS
+        Pokemon pokemon1 = new Pokemon();
+        Pokemon pokemon2 = new Pokemon();
+        pokemon1.setNombre("Charizard");
+        pokemon1.setTipo("Fuego");
+        pokemon1.setNivel(57);
+        pokemon1.setVida(132);
+
+        pokemon2.setNombre("Blastoise");
+        pokemon2.setTipo("Agua");
+        pokemon2.setNivel(54);
+        pokemon2.setVida(116);
+        System.out.println("Pokemon 1 - Nombre: " + pokemon1.getNombre() + " - Tipo: " + pokemon1.getTipo() + " - Nivel: " + pokemon1.getNivel() + " - Vida: " + pokemon1.getVida());
+        System.out.println("Pokemon 2 - Nombre: " + pokemon2.getNombre() + " - Tipo: " + pokemon2.getTipo() + " - Nivel: " + pokemon2.getNivel() + " - Vida: " + pokemon2.getVida());
+        System.out.println("Cambio en Charizard");
+        pokemon1.setNivel(58);
+        pokemon2.setVida(136);
+        System.out.println(pokemon1.getNombre() + " - Nuevo Nivel: " + pokemon1.getNivel() + " - Vida: " + pokemon1.getVida());
+        System.out.println("-----------------------------------");
+
+        //MANGA
+        Manga manga = new Manga();
+        manga.setTitulo("Hunter X Hunter");
+        manga.setAutor("Yoshihiro Togashi");
+        manga.setNumeroDeVolumen(11);
+        manga.setLeido(true);
+
+        System.out.println("Manga: " + manga.getTitulo() + " - Autor: " + manga.getAutor() +  " - Nº: " + manga.getNumeroDeVolumen() + " - Leído: " + manga.leido);
+        System.out.println("-----------------------------------");
+
+        //EQUIPO ESPORTS
+        Esports equipo = new Esports();
+        equipo.setNombre("FaZe");
+        equipo.setJuego("CSGO");
+        equipo.setPais("Inglaterra");
+        equipo.setRankingMundial(3);
+        System.out.println("Equipo: " + equipo.getNombre() + " - Juego : " + equipo.getJuego() + " - Pais: " + equipo.getPais() + " - Ranking Mundial: " + equipo.getRankingMundial());
+
+        equipo.setRankingMundial(2);
+        System.out.println("Cambio en el ranking. Nueva posición: " + equipo.getRankingMundial());
+    }
+}
