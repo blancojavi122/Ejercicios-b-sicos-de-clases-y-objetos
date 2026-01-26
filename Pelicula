@@ -37,18 +37,3 @@ public class Pelicula {
         this.director = director;
     }
 }
-class peli {
-    public static void main (String[] args) {
-        Pelicula pelicula = new Pelicula();
-        pelicula.settitulo("CREED");
-        pelicula.setDirector("ryan coogler");
-        pelicula.setAnhoDeEstreno(2015);
-        pelicula.setDuracionEnMinutos(133);
-
-        System.out.println("Pelicula: " + pelicula.getTitulo() + " - " + pelicula.getDirector() + " - " + pelicula.getAnhoDeEstreno() + " - " + pelicula.getDuracionEnMinutos() + " MINS" );
-        System.out.println("-----------------------------------");
-        System.out.println("Error al mostrar los datos");
-        System.out.println("Error corregido: " + pelicula.getDirector().toUpperCase());
-
-    }
-}
