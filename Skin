@@ -1,0 +1,38 @@
+public class Skin{
+    private String nombre;
+    private String juego;
+    private String rareza;
+    private int precio;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getJuego() {
+        return juego;
+    }
+
+    public void setJuego(String juego) {
+        this.juego = juego;
+    }
+
+    public String getRareza() {
+        return rareza;
+    }
+
+    public void setRareza(String rareza) {
+        this.rareza = rareza;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+}
